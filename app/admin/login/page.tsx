@@ -10,20 +10,12 @@ import { ContributionStatusCard } from "@/components/contribution-status-card"
 import { MembersList } from "@/components/members-list"
 import { PaymentSchedule } from "@/components/payment-schedule"
 import { RecentActivities } from "@/components/recent-activities"
+import { contributionStats } from "/../lib/types"
 
 export default function AdminDashboard() {
-  const [currentMonth, setCurrentMonth] = useState(
+  const [currentMonth] = useState(
     new Date().toLocaleString("default", { month: "long", year: "numeric" }),
   )
-
-  const contributionStats = {
-    totalMembers: 12,
-    contributedMembers: 8,
-    pendingMembers: 4,
-    totalAmount: 12000,
-    collectedAmount: 8000,
-    pendingAmount: 4000,
-  }
 
   return (
     <div className="flex min-h-screen flex-col">

@@ -1,4 +1,3 @@
-// Member types
 export interface Member {
     id: number
     name: string
@@ -80,4 +79,12 @@ export interface Member {
     }>
   }
   
-  
+export interface ContributionStats {
+    totalMembers: number
+    contributedMembers: number
+    pendingMembers: number
+    totalAmount: number
+    collectedAmount: number
+    pendingAmount: number
+  }
+
