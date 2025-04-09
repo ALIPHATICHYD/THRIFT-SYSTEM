@@ -10,7 +10,7 @@ import { ContributionStatusCard } from "@/components/contribution-status-card"
 import { MembersList } from "@/components/members-list"
 import { PaymentSchedule } from "@/components/payment-schedule"
 import { RecentActivities } from "@/components/recent-activities"
-import { contributionStats } from "/../lib/types"
+import { contributionStats } from "../../../utils"
 
 export default function AdminDashboard() {
   const [currentMonth] = useState(

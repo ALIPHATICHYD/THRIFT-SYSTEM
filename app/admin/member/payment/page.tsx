@@ -51,26 +51,6 @@ export default function MemberPayments() {
     daysLeft: 5,
   }
 
-  // Mock data for recent payments
-  const recentPayments = [
-    { id: 1, month: "March 2025", amount: 1000, date: "Mar 25, 2025", status: "Completed", reference: "TRF-2503-001" },
-    {
-      id: 2,
-      month: "February 2025",
-      amount: 1000,
-      date: "Feb 26, 2025",
-      status: "Completed",
-      reference: "TRF-2502-001",
-    },
-    {
-      id: 3,
-      month: "January 2025",
-      amount: 1000,
-      date: "Jan 27, 2025",
-      status: "Completed",
-      reference: "TRF-2501-001",
-    },
-  ]
 
   // Payment form data
   const [formData, setFormData] = useState({

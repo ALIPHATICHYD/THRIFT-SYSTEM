@@ -9,21 +9,12 @@ import { MemberHeader } from "@/components/member-header"
 import { MemberSidebar } from "@/components/member-sidebar"
 import { PaymentHistory } from "@/components/payment-history"
 import { UpcomingPayments } from "@/components/upcoming-payments"
+import { memberStats } from "../../../../utils"
 
 export default function MemberDashboard() {
   const [currentMonth, setCurrentMonth] = useState(
     new Date().toLocaleString("default", { month: "long", year: "numeric" }),
   )
-
-  // Mock data for the member dashboard
-  const memberStats = {
-    contributionAmount: 1000,
-    contributionStatus: "Pending",
-    nextPaymentDate: "April 25, 2025",
-    receivingMonth: "August 2025",
-    totalContributed: 3000,
-    totalReceived: 0,
-  }
 
   // Mock data for group progress
   const groupProgress = {

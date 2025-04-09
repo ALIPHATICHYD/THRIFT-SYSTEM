@@ -6,7 +6,39 @@ export interface Member {
     joinDate: string
     status: "Active" | "Inactive"
   }
+
+  // Recent Payment
+  export interface RecentPayment {
+    id: number
+    month: string
+    amount: number
+    date: string
+    status: "Completed" | "Pending"
+    reference: string
+  }
+
+  // Payment Types
+  export interface PaymentHistory {
+    id: number
+    month: string
+    amount: number
+    date: string
+    status: "Completed" | "Pending"
+    reference: string
+  }
   
+  // Member Stats
+  export interface MemberStats {
+    contributionAmount: number
+    contributionStatus: string
+    nextPaymentDate: string
+    receivingMonth: string
+    totalContributed: number
+    totalReceived: number
+  }
+
+
+
   // Contribution types
   export interface Contribution {
     id: number
